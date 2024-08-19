@@ -7,7 +7,7 @@ Then change it to make it draw a different pattern.
 import random
 import turtle
 
-
+#Fun!!!
 # Returns a random color!
 def getRandomColor():
     return "#%06X" % (random.randint(0, 0xFFFFFF))
