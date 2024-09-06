@@ -28,6 +28,7 @@ for color in colors:
     tina.right(120)
 
 tina.pencolor("green")
+# tina.pencolor("blue")
 tina.forward(100)
 
 turtle.exitonclick()                    # Close the window when we click on it
