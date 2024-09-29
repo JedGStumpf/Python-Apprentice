@@ -26,7 +26,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Advanced Endless Runner")
 
 # Load background image
-background_image = pygame.image.load('background.png')
+background_image = pygame.image.load('projects/dinojump/background.png')
 background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 background_rect = background_image.get_rect()
 

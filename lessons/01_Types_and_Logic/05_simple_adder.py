@@ -20,10 +20,13 @@ window.withdraw() # Hide the window
 # Hide the window, hint: use the withdraw method
 
 # Ask the user for the first number   
+first_num = simpledialog.askinteger("First Number", "Enter Your First Number")
+second_num = simpledialog.askinteger("First Number", "Enter Your Second Number")
 
-# Ask the user for the second number
+# Ask the user for the second number1
+
 
 # Display the sum of the two numbers 
-
+messagebox.showinfo("Answer", str(first_num+second_num))
 # Keep the window open
 
