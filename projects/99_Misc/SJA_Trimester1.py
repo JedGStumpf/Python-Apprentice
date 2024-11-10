@@ -1,14 +1,20 @@
 """
-On your own follow the below instructions to show your code knowlege at the end of Trimester 1
+On your own follow the below instructions to show your 
+code knowlege at the end of Trimester 1
 """
 
 # 1.  Create 3 variables, 1 each of String, Int, and Boolean
 
-# 2.  Write a for loop that prints the numbers 1-1
+# 2.  Write a for loop that prints the numbers 1-100 except 
+#           numbers that are divisable by 7
 
-# 3.  Write a for loop that prints every other letter of the string you created in the 1st task
+# 3.  Write a for loop that prints every other letter 
+#           of the string you created in the 1st task
 
-# 4.a  Create a function that takes in 2 arguments, both integers, and returns the sum of those 2 arguments
+
+
+# 4.a  Create a function that takes in 2 arguments, both integers, 
+#           and returns the sum of those 2 arguments
 
 # 4.b. Call the function from task 4.a
 
