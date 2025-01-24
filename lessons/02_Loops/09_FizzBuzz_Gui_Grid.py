@@ -26,9 +26,9 @@ HINT: You can use % and // to get the first and last digit of a number,
 our you can convert the number to a string and iterate over the digits
 
 """
-from guizero import App, Box, Text
+# from guizero import App, Box, Text
 
-app = App("Numbers Grid", layout="grid")
+# app = App("Numbers Grid", layout="grid")
 
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column
@@ -40,5 +40,45 @@ app = App("Numbers Grid", layout="grid")
 # If you are displaying a number, calculate the sum of the digits and determine the color
 
 # Call Text(app, text='...', grid=[col, row], color=...) to display something. 
+
+# app.display()
+
+
+from guizero import App, Text
+
+# Create the app with a grid layout
+app = App("Numbers Grid", layout="grid")
+
+# Generate the 10x10 grid using nested loops
+number = 1
+for row in range(10):  # Rows 0 to 9
+    for col in range(10):  # Columns 0 to 9
+        if number % 15 == 0:
+            # Divisible by 15
+            display_text = '🐍'
+            color = "black"  # Default color for icons
+        elif number % 5 == 0:
+            # Divisible by 5
+            display_text = '🦡'
+            color = "black"
+        elif number % 3 == 0:
+            # Divisible by 3
+            display_text = '🍄'
+            color = "black"
+        else:
+            # Not divisible by 3 or 5
+            display_text = str(number)
+            # Calculate the sum of digits to determine color
+            digit_sum = sum(int(digit) for digit in str(number))
+            if digit_sum % 2 == 0:
+                color = "blue"
+            else:
+                color = "red"
+
+        # Add the text to the app grid
+        Text(app, text=display_text, grid=[col, row], color=color)
+
+        # Increment the number
+        number += 1
 
 app.display()
