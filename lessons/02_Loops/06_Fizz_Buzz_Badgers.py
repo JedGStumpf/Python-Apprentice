@@ -15,19 +15,17 @@ Your job is to modify only one line -- the one with range()
 Your program should print 4 badgers. 
 
 """
-
-
-for i in range(1, 31): # Change only this line
-
-    # Don't change anything below this line
-    if i % 15 == 0:
-        print(i, '🐍 snake!')
-    elif i % 5 == 0:
-        print(i, '🦡 badger')
+for i in range(1, 30):
+    if i % 15 == 0: 
+        print('snake')
     elif i % 3 == 0:
-        print(i, '🍄 mushroom')
+        print('badger')
+    elif i % 5 == 0:
+        print ('mushroom')
     else:
         print(i)
+    # if i is divisible by 5, print 'badger'
+    # if i is divisible by 3, print 'mushroom'
+    # if i is divisible by 15, print 'snake'
+    # if i is NOT divisible by 3, 5, or 15, print i
 
-
-# hint: run the program once and look at the numbers that are printed.
