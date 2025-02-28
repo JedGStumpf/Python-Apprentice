@@ -1,33 +1,46 @@
-def get_bread():
-    bread = input("What type of bread would you like? ")
-    print(f"Getting {bread} bread...")
-    return bread
+"""
+Fun project for St. James to dial in order of operations, loops, lists, etc.
+"""
 
-def get_filling():
-    filling = input("What filling do you want? ")
-    print(f"Adding {filling}...")
-    return filling
+making_sandwhich = True
+operation = []
+ingredients = []
 
-def add_condiments():
-    condiments = input("Any condiments? (type 'none' for no condiments) ")
-    if condiments.lower() != 'none':
-        print(f"Spreading {condiments}...")
+while making_sandwhich:
+    instruct = input("Tell me what to do, press enter to pass, or type EXIT to finish:  ")
+    if instruct.lower().startswith("e"):
+        making_sandwhich = False
     else:
-        print("No condiments added.")
-    return condiments
 
-def make_sandwich():
-    print("\nWelcome to the Robot Sandwich Maker!")
-    bread = get_bread()
-    filling = get_filling()
-    condiments = add_condiments()
-    
-    print("\nHere is your sandwich order:")
-    print(f"Bread: {bread}")
-    print(f"Filling: {filling}")
-    if condiments.lower() != 'none':
-        print(f"Condiments: {condiments}")
-    print("Enjoy your sandwich!")
+        if instruct != "":
+            operation.append(instruct)
+        else:
+            operation.append(" ")
+
+        food_item = input("What do you want to add to the sandwhich, or press enter to pass:  ")
+        if food_item == "":
+            ingredients.append(" ")
+        else:
+            ingredients.append(food_item)
+
+
+finished = []
+for i in range(len(operation)):
+    finished.append(operation[i])
+    finished.append(ingredients[i])
+
+
+print("\n"*5)
+print(f'These are my instructions:  {finished}')
+print("Here were my step by step instructions:")
+
+for i, x in enumerate(finished):
+    if x != " ":
+        print(i, x)
+
+print("Enjoy the Sandwhich")
+print("\n"*5)
+
 
 
 
