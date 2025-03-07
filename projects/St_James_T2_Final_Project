@@ -8,3 +8,41 @@ Bonus...   Loop the function call to count how many times it has to run until th
     
 Have Fun!
 """
+
+import random
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def word_scramble(word: str)-> str:
+    confusing_word = ""
+    word_list = list(word)
+    while len(word_list) > 0:
+        confusing_word += word_list.pop(random.randint(0, len(word_list) - 1))
+    print(confusing_word)
+    return confusing_word
+
+
+# word_scramble("hello")
+
+count = 0
+while True:
+    count += 1
+    if word_scramble("onomatopoeia") == "onomatopoeia":
+        break
+print(count)
+        
