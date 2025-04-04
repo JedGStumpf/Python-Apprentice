@@ -91,9 +91,7 @@ def update_listbox(db):
     # This function will return a list of definitions to be displayed in the listbox, like
     # the one below. (For your function, you should set this list to the empty list)
     l = [
-        "Item 1: Fake Definition 1",
-        "Item 2: Fake Definition 2",
-        "Item 3: fake Definition 3"
+ 
     ]
 
     # Add each definition to a string
@@ -122,6 +120,7 @@ def _add_definition():
         error("Input Error", "Both fields must be filled out.")
 
 # Global dictionary to store definitions
+
 db = {}
 
 # Function to update the listbox with current definitions

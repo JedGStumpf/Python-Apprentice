@@ -13,9 +13,10 @@ def check_row(l):
         l: a 3 element iterable
         
     Returns:
-        The winner's token ( x or o ) if there is one, otherwise None
-        """
-
+        The winner's token ( X or O ) if there is one, otherwise None
+    """
+    if l[0] == l[1] == l[2] and l[0] is not None:
+        return l[0]
     return None
 
 def check_win(board):
@@ -24,9 +25,25 @@ def check_win(board):
         board: a 3x3 2D array
     
     Returns:
-        The winner's token ( x or o ) if there is one, otherwise None
+        The winner's token ( X or O ) if there is one, otherwise None
     """
-
+    # Check rows
+    for row in board:
+        winner = check_row(row)
+        if winner:
+            return winner
+    
+    # Check columns
+    for col in range(3):
+        if board[0][col] == board[1][col] == board[2][col] and board[0][col] is not None:
+            return board[0][col]
+    
+    # Check diagonals
+    if board[0][0] == board[1][1] == board[2][2] and board[0][0] is not None:
+        return board[0][0]
+    if board[0][2] == board[1][1] == board[2][0] and board[0][2] is not None:
+        return board[0][2]
+    
     return None
 
 # The following code is the main part of the program. It creates a GUI for the
@@ -45,7 +62,7 @@ class TicTacToe:
     turn = X_MARK
 
     def __init__(self, win_func=check_win):
-        self.board = None # The stoage for user's markers
+        self.board = None # The storage for user's markers
         
         self.app = App('Tic Tac Toe Game', bg='burlywood')
         self.board_pane = Box(self.app, layout='grid') # Holds UI elements for the board     

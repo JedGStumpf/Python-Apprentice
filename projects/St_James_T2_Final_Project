@@ -12,22 +12,6 @@ Have Fun!
 import random
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def word_scramble(word: str)-> str:
     confusing_word = ""
     word_list = list(word)
@@ -39,10 +23,54 @@ def word_scramble(word: str)-> str:
 
 # word_scramble("hello")
 
-count = 0
-while True:
-    count += 1
-    if word_scramble("onomatopoeia") == "onomatopoeia":
-        break
-print(count)
+# count = 0
+# while True:
+#     count += 1
+#     if word_scramble("on") == "on":
+#         break
+# print(count)
         
+student_ages = {}
+
+student_ages["Pelayo"] = 13
+
+# print(student_ages)
+
+# print("Pelayo" in student_ages)
+
+# for key, value in student_ages.items():
+    # print(f"{key} is {value} years old")
+    # print(student_ages[item])
+
+# for key in student_ages.keys():
+    # print(key)
+
+# for value in student_ages.values():
+    # print(value)
+
+# del student_ages["Pelayo"]
+
+student_ages["Pelayo"] = 14
+
+# print(student_ages)
+
+word = "Me"
+definition = "Old Guy"
+
+combined = word + ": " + definition
+# print(combined)
+
+l = []
+
+l.append(combined)
+# print(l)
+
+
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+    
+print(is_even(4))
+print(is_even(5))

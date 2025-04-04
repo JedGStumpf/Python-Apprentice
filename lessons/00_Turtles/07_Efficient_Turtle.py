@@ -34,7 +34,7 @@ draw_polygon(5, 60)                        # Draw a pentagon
 
 ...                                      # Move tina to another spot on the screen
 
-draw_polygon(6, 70)                        # Draw a hexagon
+draw_polygon(10, 70)                        # Draw a hexagon
 
 
 turtle.exitonclick()                     # Close the window when we click on it

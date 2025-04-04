@@ -1,0 +1,13 @@
+name = "Phoebe"
+grade = 7
+
+print("Hi my name is " + name + "I am in " + str(grade) + "th grade")
+print(f"Hi my name is {name} and I am in {grade}th grade")
+
+def super_cool():
+    return "This is super cool"
+
+for i in range(1, 10):
+    equation = i*i**3
+
+    print(f"Equation = {equation}, which is {i} times {i} to the power of 3")
