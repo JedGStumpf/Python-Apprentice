@@ -29,34 +29,50 @@
 
 # 4/23/2025
 
-my_list = list(range(0, 25, 2))
-print(my_list)
+# my_list = list(range(0, 25, 2))
+# print(my_list)
 
-x = 10
-y = 11
+# x = 10
+# y = 11
 
-if x % 2 == 0:
-    print(f"{x} is even")
-else:
-    print(f"{x} is odd")
-if y % 2 == 0:
-    print(f"{y} is even")
-else:
-    print(f"{y} is odd")
-
-
-name = "Phoebe"
-age = 13
-
-print(f"Hello, my name is {name} and I am {age-100} years old.")
+# if x % 2 == 0:
+#     print(f"{x} is even")
+# else:
+#     print(f"{x} is odd")
+# if y % 2 == 0:
+#     print(f"{y} is even")
+# else:
+#     print(f"{y} is odd")
 
 
-counter = 0
-#nested for loop printing 1-9 in a 3x3 grid
-for i in range(3):
-    for j in range(3):
-        counter += 1
-        print(counter, end=" ")
-    print()  # New line after each row
+# name = "Phoebe"
+# age = 13
+
+# print(f"Hello, my name is {name} and I am {age-100} years old.")
 
 
+# counter = 0
+# #nested for loop printing 1-9 in a 3x3 grid
+# for i in range(3):
+#     for j in range(3):
+#         counter += 1
+#         print(counter, end=" ")
+#     print()  # New line after each row
+
+
+# 4/30/2025
+
+
+fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+
+print(fruits[0])  # Accessing the first element
+print(fruits[1])  # Accessing the second element    
+
+dinners = ["pizza", "pasta", "salad", "sushi", "tacos"]
+
+foods = [fruits, dinners]
+print(foods[0])
+print(foods[0][0])  # Accessing the first element of the first list
+print(foods[1][1])  # Accessing the second element of the second list
+print(foods[0][1])  # Accessing the second element of the first list
+print(foods[1][0])  # Accessing the first element of the second list
