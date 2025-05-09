@@ -4,9 +4,10 @@ board = [[0, 1, 2],
          [3, 4, 5],
          [6, 7, 8]]
 
+print(board[0])
 
-# print(array[0][2])
-# print(board[2][2])
+print(board[0][2])
+print(board[2][2])
 
 
 def say_my_name(name):
@@ -27,10 +28,10 @@ def print_my_list(my_list):
 
 row = None
 
-if row:
-    print("True")
-else:
-    print("False")
+# if row:
+#     print("True")
+# else:
+#     print("False")
 
 
 
@@ -56,15 +57,15 @@ def add_to_db(db, key, value):
     db[key] = value
 
 
-print(db)
+# print(db)
 
 add_to_db(db, "name", "St. James")
 add_to_db(db, "age", "25")
 
-print(db)
+# print(db)
 
 # del db["name"]
-print(db)
+# print(db)
 
 
 
@@ -79,6 +80,25 @@ def is_funny(definition):
         else:
             print("Not funny")
     
-is_funny("St. James")
-is_funny("this is wrong")
+# is_funny("St. James")
+# is_funny("this is wrong")
 
+
+# 5/9/2025
+
+
+rooms = (1, 2, 3, 4, 5)
+
+checked_in_rooms = {1:"Pelayo"}
+
+# for room in rooms:
+#     if room in checked_in_rooms.keys():
+#         print(f"Room {room} is checked in")
+#     else:
+#         print(f"Room {room} is available")
+
+
+name = "St. James"
+age = 25
+print(f"{name} {age} ")
+print(name + " " + str(age))

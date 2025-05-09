@@ -65,14 +65,22 @@
 
 fruits = ["apple", "banana", "orange", "grape", "kiwi"]
 
-print(fruits[0])  # Accessing the first element
-print(fruits[1])  # Accessing the second element    
+# print(fruits[0])  # Accessing the first element
+# print(fruits[1])  # Accessing the second element    
 
 dinners = ["pizza", "pasta", "salad", "sushi", "tacos"]
 
-foods = [fruits, dinners]
-print(foods[0])
-print(foods[0][0])  # Accessing the first element of the first list
-print(foods[1][1])  # Accessing the second element of the second list
-print(foods[0][1])  # Accessing the second element of the first list
-print(foods[1][0])  # Accessing the first element of the second list
+# foods = [fruits, dinners]
+# print(foods[0])
+# print(foods[0][0])  # Accessing the first element of the first list
+# print(foods[1][1])  # Accessing the second element of the second list
+# print(foods[0][1])  # Accessing the second element of the first list
+# print(foods[1][0])  # Accessing the first element of the second list
+
+
+my_nums = [1, 2, 3, 4, 5]
+for i in my_nums:
+    print(i)
+print()
+for i in my_nums[::-1]:
+    print(i)
