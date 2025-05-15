@@ -86,11 +86,42 @@ dinners = ["pizza", "pasta", "salad", "sushi", "tacos"]
 #     print(i)
 
 
-try:
-    age = int(input("Enter your age: "))
+# try:
+#     age = int(input("Enter your age: "))
 
-except ValueError:
-    print("Invalid input. Please enter a valid age.")
-else:
-    if age < 0:
-        raise ValueError("Age cannot be negative.")
+# except ValueError:
+#     print("Invalid input. Please enter a valid age.")
+# else:
+#     if age < 0:
+#         raise ValueError("Age cannot be negative.")
+
+
+# 5/14/2025
+
+fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+
+# for fruit in fruits:
+#     print(fruit)
+
+
+# for num in range(5):
+#     print(num)
+
+# create a simple function that takes 2 arguments and returns their sum
+
+#a is the first argument and b is the second argument
+# return is what the function gives back
+def add_things(a, b):
+    return a + b
+
+print(add_things(5, 10))  # Output: 15 (a is 5, b is 10)
+print(add_things("Hello", " World"))  # Output: Hello World (a is "Hello", b is " World")
+
+def fire_cannon(gun_poweder, cannon_ball, ignition):
+    print("Firing cannon with the following parameters:")
+    print(f"Gun Powder: {gun_poweder}")
+    print(f"Cannon Ball: {cannon_ball}")
+    print(f"Ignition: {ignition}")
+
+
+fire_cannon("Fire", "beach ball", "train")
