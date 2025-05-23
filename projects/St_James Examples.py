@@ -1,13 +1,25 @@
 #Code a for loop that creates a 2d array 3x3 with numeric values
 
-board = [[0, 1, 2],
+board = [[None, None, None],
          [3, 4, 5],
          [6, 7, 8]]
 
-print(board[0])
+for row in board:
+    print(row)
+# print(board[0])
 
-print(board[0][2])
-print(board[2][2])
+# print(board[0][2])
+# print(board[2][2])
+
+# print(board[0][0] == board[0][1] and board[0][1] == board[0][2] and board[0][1] is not None)
+
+
+def none_function():
+    x = 0
+    print(x)
+    # return x
+
+print(none_function())
 
 
 def say_my_name(name):
@@ -100,5 +112,34 @@ checked_in_rooms = {1:"Pelayo"}
 
 name = "St. James"
 age = 25
-print(f"{name} {age} ")
-print(name + " " + str(age))
+# print(f"{name} {age} ")
+# print(name + " " + str(age))
+
+
+# 5/23/2025
+
+
+
+from string import ascii_lowercase as lettters
+
+alphabet = [letter for letter in lettters]
+# print(alphabet)
+
+
+rooms = [1, 2, 3, 4, 5]
+
+# cust_choice = int(input("Enter room number: "))
+
+# name = input("Enter your name: ")
+
+# occupied = {}
+
+# if cust_choice in rooms:
+#     checked_room = rooms.pop(rooms.index(cust_choice))
+#     occupied[checked_room] = name
+# else:
+#     print("Room not available")
+
+# print(occupied)
+
+# print(rooms)
